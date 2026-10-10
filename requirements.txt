@@ -1,0 +1,4 @@
+pandas
+langchain
+langchain-openrouter
+python-dotenv

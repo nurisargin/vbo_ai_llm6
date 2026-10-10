@@ -1,0 +1,19 @@
+[project]
+name = "aillm6"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.4",
+    "langchain-openrouter>=0.2.9",
+    "pandas>=3.0.6",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+aillm6 = "aillm6:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
