@@ -2,3 +2,8 @@ pandas
 langchain
 langchain-openrouter
 python-dotenv
+langchain-tavily
+langchain-mcp-adapters
+mcp<2
+sqlmodel
+psycopg-binary
