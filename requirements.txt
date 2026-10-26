@@ -7,3 +7,4 @@ langchain-mcp-adapters
 mcp<2
 sqlmodel
 psycopg-binary
+langchain-typesafe[experimental]

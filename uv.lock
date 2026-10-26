@@ -19,6 +19,7 @@ dependencies = [
     { name = "langchain-mcp-adapters" },
     { name = "langchain-openrouter" },
     { name = "langchain-tavily" },
+    { name = "langchain-typesafe", extra = ["experimental"] },
     { name = "mcp" },
     { name = "pandas" },
     { name = "psycopg", extra = ["binary"] },
@@ -33,6 +34,7 @@ requires-dist = [
     { name = "langchain-mcp-adapters", specifier = ">=0.3.1" },
     { name = "langchain-openrouter", specifier = ">=0.2.9" },
     { name = "langchain-tavily", specifier = ">=0.2.18" },
+    { name = "langchain-typesafe", extras = ["experimental"], specifier = ">=0.0.1a3" },
     { name = "mcp", specifier = "<2" },
     { name = "pandas", specifier = ">=3.0.6" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.6" },
@@ -869,6 +871,24 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/d6/6c/b309ef3062b189a82463dc93553804566e71aa393f9ba8954750793c1a6f/langchain_tavily-0.2.18.tar.gz", hash = "sha256:cd7859ae1a6ce79236580ef67072ff5fc43c7ded94e7eac38ff04209ca85a320", size = 25378, upload-time = "2026-04-16T15:23:24.526Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/71/9c/0c043e4434b1823f0ac194f66036cbb0569275a99dcb890e0891ecd34fb2/langchain_tavily-0.2.18-py3-none-any.whl", hash = "sha256:dccf3ad1c50e2cb2a89bec11727555805c9df8abd42c1f3ad42ccad86e28aa44", size = 30814, upload-time = "2026-04-16T15:23:23.424Z" },
+]
+
+[[package]]
+name = "langchain-typesafe"
+version = "0.0.1a3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx2" },
+    { name = "langchain-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c9/54/460d126cb5db7b031e5b3b94c63fe36d58bce020f2692fd7661f8f84c7d3/langchain_typesafe-0.0.1a3.tar.gz", hash = "sha256:d77647a7a5bafaa82db8212a682b223a9bbcd52fb015e49464f211552f1f3272", size = 200970, upload-time = "2026-09-20T18:54:40.777Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ca/5b/a14f30242eb36363ee757024a01727fef5efffbb542d2382468f457a7e2b/langchain_typesafe-0.0.1a3-py3-none-any.whl", hash = "sha256:f06f74ebdcb10cbc836dd89a275bbf4e2e13646cb919dcc02d4219e602cfe36e", size = 24962, upload-time = "2026-09-20T18:54:39.797Z" },
+]
+
+[package.optional-dependencies]
+experimental = [
+    { name = "langchain" },
 ]
 
 [[package]]

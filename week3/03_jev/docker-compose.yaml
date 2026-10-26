@@ -1,0 +1,9 @@
+services:
+  tau:
+    build: .
+    image: tau-4b-server:0.1
+    container_name: tau
+    ports:
+      - 8000:8000
+    restart: unless-stopped
+    # The model needs ~10 GB of RAM on CPU; raise Docker Desktop's memory limit if it is lower
